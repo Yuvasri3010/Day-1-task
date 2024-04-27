@@ -1,0 +1,47 @@
+Objects and Its Internal Representation in JavaScript
+
+	*In simple terms A JavaScript object is a collection of named values having state and behavior (properties and method)”.
+
+	*For example: Person, car, pen, bike, Personal Computer , Washing Machine etc.
+
+Take the case of cars.
+
+	*All cars have the same properties, but the property values differ from car to car. All cars have the same methods, but the methods are performed at different times.
+
+Features of Merc car and list out its properties:
+
+*Make: Mercedes 
+*Model: C-Class
+*Color: White
+*Fuel: Diesel
+
+1)Objects:
+
+The following code assigns a simple value (Mercedes) to a variable named car:
+var car = "Mercedes";
+
+The following code assigns many values (Mercedes, C-class, White and soo on) to a variable named Car:
+var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel};
+
+2)Object Properties
+
+The name:values pairs (in JavaScript objects) are called properties.
+var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel};
+
+3)Object Methods
+
+An object method is an object property containing a function definition.
+
+4)creating object:
+ 
+Create JavaScript Object with Constructor
+Constructor is nothing but a function and with help of new keyword, constructor function allows to create multiple objects of same flavor as shown below
+
+function Vehicle(name, maker) {
+   this.name = name;
+   this.maker = maker;
+}
+let car1 = new Vehicle(’Fiesta’, 'Ford’);
+let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+console.log(car1.name);   
+console.log(car2.name); 
